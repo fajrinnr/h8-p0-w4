@@ -4,7 +4,11 @@ function angkaPrima(angka) {
             return false
         } 
     }
+    if (angka === 0){
+        return undefined
+    }
     return true
+    
 }
 
 // TEST CASES
@@ -13,3 +17,4 @@ console.log(angkaPrima(7)); // true
 console.log(angkaPrima(6)); // false
 console.log(angkaPrima(23)); // true
 console.log(angkaPrima(33)); // false
+console.log(angkaPrima(0)); // false
