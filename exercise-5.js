@@ -14,7 +14,6 @@ function ubahHuruf(kata) {
     return hasil
 }
 
-
 // TEST CASES
 console.log(ubahHuruf('wow')); // xpx
 console.log(ubahHuruf('developer')); // efwfmpqfs
