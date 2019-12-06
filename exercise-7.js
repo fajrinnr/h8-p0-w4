@@ -6,7 +6,7 @@ function urutkanAbjad(str) {
     tampung.sort()
     return tampung.join('')
   }
-  
+   
   // TEST CASES
   console.log(urutkanAbjad('hello')); // 'ehllo'
   console.log(urutkanAbjad('truncate')); // 'acenrttu'
