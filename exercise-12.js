@@ -23,8 +23,8 @@ function countProfit(shoppers) {
         totalProfit: 0
     }]
 
-    
-    if (shoppers.length === 0){
+
+    if (shoppers.length === 0) {
         return []
     }
 
@@ -34,7 +34,7 @@ function countProfit(shoppers) {
                 obj[i]['leftOver'] = obj[i]['leftOver'] - shoppers[j].amount
                 obj[i]['shoppers'].push(shoppers[j].name)
                 obj[i]['totalProfit'] = (listBarang[i][2] - obj[i]['leftOver']) * listBarang[i][1]
-            
+
             }
         }
     }
