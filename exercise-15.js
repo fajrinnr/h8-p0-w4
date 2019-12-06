@@ -14,7 +14,7 @@ function highestScore(students) {
     }
     return objTotal
 }
-
+ 
 // TEST CASE
 console.log(highestScore([
     {
