@@ -9,7 +9,7 @@ function tukarBesarKecil(kalimat) {
     }
     return tampung
   }
-  
+   
   // TEST CASES
   console.log(tukarBesarKecil('Hello World')); // "hELLO wORLD"
   console.log(tukarBesarKecil('I aM aLAY')); // "i Am Alay"
