@@ -33,11 +33,11 @@ function shoppingTime(memberId, money) {
     if (duit >= harga[2][1]) {
         obj['listPurchased'].push(harga[2][0])
         duit = duit - harga[2][1]
-    } 
+    }
     if (duit >= harga[3][1]) {
         obj['listPurchased'].push(harga[3][0])
         duit = duit - harga[3][1]
-    } 
+    }
     if (duit >= harga[4][1]) {
         obj['listPurchased'].push(harga[4][0])
         duit = duit - harga[4][1]
