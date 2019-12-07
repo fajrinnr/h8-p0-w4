@@ -1,19 +1,22 @@
 function graduates(students) {
-    var objTotal = {}
-    var arrTotal = []
+    var hasil = {}
+
     for (let i = 0; i < students.length; i++) {
-        if (objTotal[students[i].class] == undefined) {
-            objTotal[students[i].class] = {
-                name: students[i].name,
-                score: students[i].score
+        var tampung = {}
+        if (hasil[students[i]['class']] == undefined) {
+            hasil[students[i]['class']] = []
+            if (students[i]['score'] >= 75) {
+                tampung.name = students[i]['name']
+                tampung.score = students[i]['score']
+                hasil[students[i]['class']].push(tampung)
             }
-        } else if (objTotal[students[i].class] == students[i].class && objTotal[students[i].score] > students[i].score) {
-            objTotal[students[i].class].name = students[i].name
-            objTotal[students[i].class].score = students[i].score
-            arrTotal.push(objTotal[students[i].class])
+        } else if (students[i]['score'] >= 75) {
+            tampung.name = students[i]['name']
+            tampung.score = students[i]['score']
+            hasil[students[i]['class']].push(tampung)
         }
     }
-    return objTotal
+    return hasil
 }
 
 console.log(graduates([
