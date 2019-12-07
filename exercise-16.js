@@ -6,13 +6,13 @@ function graduates(students) {
         if (hasil[students[i]['class']] == undefined) {
             hasil[students[i]['class']] = []
             if (students[i]['score'] >= 75) {
-                tampung.name = students[i]['name']
-                tampung.score = students[i]['score']
+                tampung['name'] = students[i]['name']
+                tampung['score'] = students[i]['score']
                 hasil[students[i]['class']].push(tampung)
             }
         } else if (students[i]['score'] >= 75) {
-            tampung.name = students[i]['name']
-            tampung.score = students[i]['score']
+            tampung['name'] = students[i]['name']
+            tampung['score'] = students[i]['score']
             hasil[students[i]['class']].push(tampung)
         }
     }
